@@ -967,3 +967,5 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 async def read_items(token: str = Depends(oauth2_scheme)):
     return {"token": token}
 
+if __name__ == '__main__':
+    unicorn.run('main:app', host='0.0.0.0',port=8000,workers=2,debug=True)
