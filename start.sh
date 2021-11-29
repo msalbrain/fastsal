@@ -18,10 +18,10 @@ if [ ! -f $VIRTUALENV/bin/pip ]; then
 fi
 
 # Install the requirements
+$VIRTUALENV/bin/pip -r requirements.txt
 
 # Run a glorious Python 3 server
 $VIRTUALENV/bin/python3 main.py
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Securit
+
+
+
